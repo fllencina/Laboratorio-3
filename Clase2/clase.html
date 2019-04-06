@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Calculadora</title>
+    <script src="./funciones.js">
+    
+
+    </script>
+    <link rel="stylesheet" href="./Estilos.css"/>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <nav> 
+            <ul>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="./Pag.html">link3</a></li>  
+                <li><a href="http://www.google.com">link4</a></li>                            
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                    <h1>
+                            Calculadora
+                        </h1>
+                        <fieldset>
+                            <legend>Sumar Numeros:</legend>
+                    <label>Se debe ingresar dos numeros y hacer click en el boton sumar para mostrar el resultado:</label>
+                    <br>
+                    <input type="number" name="txtNumero1" id="inputNumero1">
+                    
+                    +
+                    
+                    <input type="number" name="txtPNumero2" id="inputNumero2">
+                    
+                    <input class="verde" type="button" id="btnSumar" value="Sumar" onclick="Sumar();">
+                     
+                    <input class="rojo" type="button"  id="btnSumarYGuardar" value="Sumar y Guardar" > 
+                    <hr>
+                    <label>Resultado: </label>
+                    <input type="number" id="inputResultado">
+                    <hr>
+                </fieldset>
+            </article>
+            <article>
+                      
+                <h2> Historial de Resultados</h2>
+                <table border="1" >
+                <thread>
+                    <th id="Numero1">
+                        Numero 1
+                    </th>
+                    <th id="Numero2">
+                        Numero2
+                    </th>
+                    <th id="Resultado">
+                        Resultado
+                    </th>
+                </thread>
+                <tbody id="tbody">
+                    
+                </tbody>
+                </table>
+                </article>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+
+
+  
+
+</body>
+</html>
