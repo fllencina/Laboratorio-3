@@ -1,0 +1,39 @@
+<html>
+    <head>
+                <script src="./Funciones.js">
+                        
+                        </script>
+                        <link rel="stylesheet" href="./Estilos.css"/>
+                        <script>
+                            //objetos javascritp Json par clave : valor
+                        var obj={};
+                        var persona={nombre:"Fernanda",Edad: 30};
+                        alert(persona.nombre);
+                           //
+                           //array se declara
+                           var array=[];
+                           //puedo hacer un array de objetos json
+                           var personas=[{nombre:"fernanda",edad:30},{nombre:"pedro",edad:20}];
+                            //json.parse convierte un string a objeto json para acceder a los atributos
+                            //proceso inverso json.stringify convierte objeto json a string
+                        </script>
+        </head>
+        <body>
+                <fieldset>
+                        <legend>Login:</legend>
+                <label>Usuario:</label>
+                <br>
+                <input type="text" name="usuario" id="usuario">
+                <br>
+                <label>pass:</label>
+                <br>
+                <input type="password" name="pass" id="pass">
+                <br>
+                <input type="checkbox" checked name="checkRecordar"> <label>Recordar Uusario y contraseña</label>
+                <br>
+                <input type="button"  id="btn" name="btn" value="Enviar" > <!--onclick="ValidarUsuario();-->
+                <input type="reset" value="Limpiar">
+               
+            </fieldset>
+		</body>
+		</html>
