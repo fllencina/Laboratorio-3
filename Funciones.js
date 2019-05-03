@@ -81,14 +81,7 @@ function callbackPost(){
             var divAgregar=document.createElement('div');
             divAgregar.innerHTML='Titulo: '+Titulo+'<br>Encabezado: '+Encabezado+'<br>Post: '+posteo+'<br>Author: '+author+'<br>Fecha: '+fecha;
             DatosMostrar.appendChild(divAgregar);
-            
-            //     var mail=document.getElementById('email').value;
-            //     var prefColor=preferencias.preferencias.color;
-            //     var prefFont=preferencias.preferencias.font;
-            //     window.location.replace("./Index.html?color="+prefColor+"&font:"+prefFont+"&email="+ mail);
-            // }  
-           // document.getElementById('mostrar').innerHTML=respuesta;
-           // mostrar.apendChild('muestro');   
+                 
         }
         
         else{
