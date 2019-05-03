@@ -68,6 +68,8 @@ box-shadow: 10px 10px grey;
     height: 120px;
     -webkit-animation: spin 2s linear infinite; /* Safari */
     animation: spin 2s linear infinite;
+    text-align: center;
+    vertical-align: middle;
  }
  @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -79,4 +81,8 @@ box-shadow: 10px 10px grey;
     height: 80%;
     background-color: #EFEFF0;
     display: inline-block;
+    padding: 10px;
+  }
+  #divContiene{
+    padding:10px;
   }

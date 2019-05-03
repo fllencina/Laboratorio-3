@@ -9,14 +9,17 @@
 
               <div id="divContiene"> 
                 <div id="cargando" style="background-color:white">
-                    <div class="loader">
-
+                    <div class="loader" style="text-align: center;vertical-align: middle;">
+                       
                     </div>
+                    <br>
+                     <label style="text-align:center;">Publicando...
+                        </label>
                 </div>
                 <div class="NuevoPost" id="NuevoPost">
-                    <label>
+                    <h3>
                         Escriba su nuevo post
-                    </label>
+                    </h3>
                     <br>
                     <label>
                         Titulo
@@ -37,11 +40,15 @@
                     <textarea  id="postText" rows="15" cols="150">
                         </textarea>
                     <br>
-                    <input class="input"  id="btnPublicar" type="button" value="Publicar">
-                </div>
-                <div id="mostrar" style="display:none">
+                    <br>
+                    <br>
+                    <input class="input"  id="btnPublicar" type="button" value="Publicar" onclick="PublicarPost();">
+                    <br>
+                     <div id="mostrar" style="display:none">
 
+                    </div>
                 </div>
+               
             </div> 
                 </body>
  </html>
