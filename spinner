@@ -1,0 +1,74 @@
+html
+<div class='loader'>
+  <div class='spinner yellow'></div>
+  <div class='spinner orange'></div>
+  <div class='spinner red'></div>
+  <div class='spinner pink'></div>
+  <div class='spinner violet'></div>
+  <div class='spinner mauve'></div>
+  <div class='spinner light-yellow'></div>
+</div>
+
+css
+
+$width: 100px; $height: $width; $border: 26px; $duration: 1s; $repetition: infinite;
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -$height/2;
+  margin-left: -$width/2;
+}
+
+.loader {
+  display: block;
+  width: $width;
+  height: $height;
+  position: relative;
+  transform-origin: ($width+$border)/2  ($height+$border)/2;
+  animation: spin $duration $repetition linear;
+  
+  .spinner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0px 0px $border $border;
+    border-style: solid;
+    border-color: transparent;
+    
+    &.yellow {
+      border-left-color: #ffff99;
+    }
+    &.orange {
+      border-left-color: #ffcc66;
+      transform: rotate(-45deg);
+    }
+    &.red {
+      border-left-color: #ff9966;
+      transform: rotate(-90deg);
+    }
+    &.pink {
+      border-left-color: #ff6699;
+      transform: rotate(-135deg);
+    }
+    &.violet {
+      border-left-color: #cc66cc;
+      transform: rotate(-180deg);
+    }
+    &.mauve {
+      border-left-color: #cc99cc;
+      transform: rotate(-225deg);
+    }
+    &.light-yellow {
+      border-left-color: #fffad5;
+      transform: rotate(-270deg);
+    }
+  }
+}
+
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
