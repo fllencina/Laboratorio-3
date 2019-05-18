@@ -1,0 +1,59 @@
+addEventListener('dblclick',funcion)
+
+function TodayDate(){
+        let data= new Date();
+        return data.getFullYear().toString()+'-' + (data.getMonth()+1).toString()+'-' + data.getDate().toString()
+    }
+    document.getElementById('today').innerHTML = '<input type="date" name="Data" value="'+TodayDate()+'" ><br>';
+	
+	
+	jquery
+	 
+	 frame de js 
+	 engloba funciones
+	 
+	 jquery.com
+	 
+	 
+	 abre consola
+	 crear proyecto para usar dependencias librerias npm admin de package descargar de internet frame
+	 comando 
+	 npm init
+	 crear archivo tipo json
+	 nombre y version proyecto
+	 incluimos en este archivo los diferentes frame que voy a usar
+	 
+	 npm install jquery --save
+	 
+	 
+	 script "./node_modules/jquery/dist/jquery.min.js"
+	 
+	 
+	 ready
+	 selectores
+	 # id en concreto
+	 . la clase todos los elementos qe tiene esa class
+	 : Tipo  todos los input que sean de ese tipo
+	 
+	 document.getElementById('btn').
+	 $('#btn').
+	 
+	 
+	 $.get(url,funcion);siempre asincronico
+	 funcion  seria el callback puede recibir dos parametros Data(json)respuesta de servidor ,status 
+	 
+	 $('.btnPost').click,function(){
+	 
+		$.post(url,json,funcion) funcion es el callback(data,status)
+	 
+	 console.log($('#in').val()); retorna valor si val.('algo')setea ese algo 
+	 innerHTML= .html() sin parametro retorna valor innerhtml con parametro lo setea 
+	 
+	 
+	 
+	 manejo de imagenes
+	 
+	 input file
+	 base 64
+	setatribut attr 
+	 
