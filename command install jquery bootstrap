@@ -1,3 +1,12 @@
 npm init
 npm  npm install js -save
 npm install bootstrap
+
+
+npm install -g typescript 
+
+tsc (compilador)
+tsc tab.ts
+(agrego -w sigue el archivo, si hago cambios va guardando y refrescando en js )
+(*.ts si hay muchos archivos los transpila todos)
+convierte a js 
